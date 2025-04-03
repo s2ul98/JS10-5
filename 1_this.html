@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+</head>
+<body>
+  <!-- 버튼을 클릭하면 함수가 실행됨 -->
+   <!-- onclick 속성에는 자바스크립트 코드 또는 함수를 작성 -->
+  <button onclick="doClick(this)">조회</button>
+
+  <!-- onchange: 옵션이 바뀌면 함수가 실행됨 -->
+  <select onchange="doSelect(this)">
+    <option value="1">A</option>
+    <option value="2">B</option>
+    <option value="3">C</option>
+  </select>
+
+  <script>
+    // this키워드
+    console.log(this);
+
+    function func() {
+      console.log(this);
+    }
+    func();
+
+    // this는 button을 가리킴
+    // html 태그에서 이벤트가 발생하면 this는 이벤트가 발생된 요소를 가르킨다
+    function doClick(obj) {
+      console.log(obj); 
+    }
+
+
+    // doClick, doSelect는 이벤트 핸들러
+    // 이벤트가 발생이 됐을때 수행되는 함수
+    // 여기서 this는 이벤트가 발생된 요소를 가르킨다
+    function eventHandler(obj) {
+    console.log(obj);
+    }
+  
+    // 객체안에서 this 키워드
+    const person = {
+      firstName: "길동",
+      lastName: "홍",
+      getFullName: function() {
+        return this.firstName + " " + this.lastName;
+      }
+    }
+    const fullName = person.getFullName();
+    console.log(fullName); 
+  
+  </script>
+
+  <!-- th -->
+
+  <!-- this 키워드 -->
+</body>
+</html>
