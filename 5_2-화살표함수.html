@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</head>
+<body>
+  <script>
+    document.addEventListener (DOMContentLoaded, () => {
+
+      const btn1 = document.getElementById('btn1');
+      const btn2 = document.getElementById('btn2');
+
+      // 화살표 함수의 this는 상위 코스프의 this (window객체)
+      btn1.onclick = function() {
+        console.log(this);
+        this.textContent = '버튼1 클릭됨!';
+      }
+
+      btn2.onclick = () => {
+        console.log(this);
+      }
+    });
+  </script>
+</body>
+</html>

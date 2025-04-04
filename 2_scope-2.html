@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</head>
+<body>
+  <script>
+    // 전역 변수
+    let a = 1;
+    const func1 = function() {
+      // 지역 변수
+      // 지역변수는 스코프 안에서만 사용 가능
+      // b는 함수 안에서만 사용 가능
+      let b = 2;
+      console.log(a); 
+      console.log(b); 
+    }
+    console.log(a); // 1
+    func1();
+
+    // 지역 변수 
+    // c는 
+
+
+    // for() {
+    //   // i는 지역변수, 반복문은 안에서만 사용가능
+    //   console.log(i);
+    // }
+
+    // for문이 끝난 후에도 변수가 필요할 때는
+    // 전역변수를 만들고 for문 안에서는 초기화만 할 것
+    // 변수 선언 생략
+    let j = 0;
+    for(j=0; j <3; j++) {
+      xonsole.log(j); 
+    }
+    console.log(j);
+  </script>
+</body>
+</html>
