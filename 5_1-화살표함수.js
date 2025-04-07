@@ -6,8 +6,11 @@
 // const hello = name => 'hello' + name;
 //   return 'hello' + name;
 
-const func = () =>  
+// 화살표 함수에서
+// 구현부의 코드가 여러줄일때는 {}블록을 생략할 수 없다
+const func = () => {
   console.log('aa');
   console.log('bb');
-
+}
+  
 func();

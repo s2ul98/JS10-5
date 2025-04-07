@@ -14,9 +14,9 @@ const b = 20;
 console.log(`${a}과 ${b}를 곱한 결과는 ${a * b} 입니다`);
 
 // Q13
-var a = 10;
-var b = 20;
-console.log(`${a}과 ${b}의 평균은 ${(a + b) / 2} 입니다`);
+const a1 = 10;
+const b1 = 20;
+console.log(`${a1}과 ${b1}의 평균은 ${(a + b) / 2} 입니다`);
 
 
 // Q14
